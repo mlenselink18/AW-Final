@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zoom</title>
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <link href="../styles/zoom.css" rel="stylesheet" type="text/css" />
+</head>
+<header>
+    <h1>Focal Length</h1>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Exposure/index.html">Exposure</a></li>
+        <li><a href="../Composition/index.html">Composition</Command></a></li>
+        <li><a href="../Zoom/index.html">Zoom</a></li>
+    </ul>
+</nav>
+<br>
+<body>
+    <main>
+        <p>Click on an image to enlarge.</p>
+        <ul id="image_list">
+            <li>
+                <a href="../Pictures_lenses/lenses.jpg" title="Different camera lenses ranging from short to long - click through
+                to see the pictures they take!">
+                    <img src="../thumbnails/lenses-t.jpg" alt="Different Lenses">
+                </a>
+            </li>
+            <li>
+                <a href="../Pictures_lenses/fisheye.jpg" title="A fisheye lens (>14mm) is the widest and distorts the image">
+                    <img src="../thumbnails/fisheye-t.jpg" alt="Fisheye Lenses are Ultra-Wide">
+                </a>
+            </li>
+            <li>
+                <a href="../Pictures_lenses/wide-focal-length.jpg" title="Wide-Angle lenses (14-35mm) capture a wide area without distortion">
+                    <img src="../thumbnails/wide-focal-length-t.jpg" alt="A wide lens captures a wide view">
+                </a>
+            </li>
+            <li>
+                <a href="../Pictures_lenses/normal-focal-length.jpg" title="A normal lens (35-50mm) has a similar field of view as the human eye">
+                    <img src="../thumbnails/normal-focal-length-t.jpg" alt="A normal lens is similar to the human eye">
+                </a>
+            </li>
+            <li>
+                <a href="../Pictures_lenses/mid-focal-length.jpg" title="Long lenses (50-135mm) are a bit longer than normal and they're great for portraits">
+                    <img src="../thumbnails/mid-focal-length-t.jpg" alt="A slightly longer lens is great for portraits">
+                </a>
+            </li>
+            <li>
+                <a href="../Pictures_lenses/long-focal-length.jpg" title="Ultra-Long lenses (<135mm) are great for capturing distant objects in detail">
+                    <img src="../thumbnails/long-focal-length-t.jpg" alt="A long lens captures faraway objects">
+                </a>
+            </li>
+        </ul>
+        <h3 id="caption">Different camera lenses ranging from short to long - click through
+            to see the pictures they take!</h3>
+        <p><img id="main_image" src="../Pictures_lenses/lenses.jpg"></p>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+    <script src="zoom.js"></script>
+</body>
+<footer>
+    <p>&#169; 2021 Lenselink Photography</p>
+    <p class="citation">Images provided by <b>Pexels</b> from <a href="https://www.pexels.com/" target="blank"><b>www.pexels.com</b></a> are licensed by <b>CC 3.0 BY</b></p>
+</footer>
+</html>

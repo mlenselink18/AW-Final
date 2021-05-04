@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exposure</title>
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<header>
+    <h1>All About Exposure</h1>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Exposure/index.html">Exposure</a></li>
+        <li><a href="../Composition/index.html">Composition</Command></a></li>
+        <li><a href="../Zoom/index.html">Zoom</a></li>
+    </ul>
+</nav>
+<br>
+<body>
+    <main>
+        <div>
+            <h2>
+                Exposing an Image
+            </h2>
+            <p>
+                Exposure is the act of letting light into a camera and capturing the light either on film
+                or on a digital sensor. Understanding exposure is the most fundamental aspect of taking a picture.
+            </p>
+            <p>
+                There are three factors that affect your image is exposed: shutter speed, aperture, and ISO. Take a look through the 
+                following tabs to learn how each of these impact the final picture. You can click on each image for a larger view.
+            </p>
+        </div>
+        <div id="tabs">
+            <ul>
+            <li><a href="#tabs-1">Shutter Speed</a></li>
+            <li><a href="#tabs-2">Aperture</a></li>
+            <li><a href="#tabs-3">ISO</a></li>
+            </ul>
+            <div id="tabs-1">
+                <p>
+                    <a href="../Pictures/choose_a_camera-min.jpg" title="Cameras" class="popup_image">
+                        <img src="../Pictures/choose_a_camera-min.jpg">
+                    </a>
+                    Cameras operate by opening a shutter to let light inside. How long that shutter remains open is known 
+                    as the <b>shutter speed</b>. It can be fast or slow depending on your needs.
+                </p>
+                <p>
+                    <a href="../Pictures/fast_shutter-min.jpg" title="Fast Shutter" class="popup_image">
+                        <img src="../Pictures/fast_shutter-min.jpg">
+                    </a>
+                    A fast shutter speed captures action, even if it happens in a fraction of a second. An athlete moves 
+                    fast, but with the right technique, a photographer can still catch the goal-winning kick.
+                </p>
+                <p>
+                    <a href="../Pictures/slow_shutter-min.jpg" title="Slow Shutter" class="popup_image">
+                        <img src="../Pictures/slow_shutter-min.jpg">
+                    </a>
+                    A slow shutter speed leaves the shutter open and lets more light in. This means that actions will look 
+                    smoothed-out in the image, such as this waterfall.
+                </p>
+            </div>
+            <div id="tabs-2">
+                <p>
+                    <a href="../Pictures/aperture_narrow-min.jpg" title="Narrow Aperture" class="popup_image">
+                        <img src="../Pictures/aperture_narrow-min.jpg">
+                    </a>
+                    While the shutter is open to let light in, the <b>aperture</b> of the lens closes partially to restrict how much light 
+                    passes through and enters the camera. How much the aperture closes is represented by a number known as the 
+                    <b>f-stop</b>. A larger number indicates a narrower opening, while smaller numbers mean that it closes less.
+                    The image to the left shows a high f-stop.
+                </p>
+                <p>
+                    <a href="../Pictures/aperture_wide-min.jpg" title="Wide Aperture" class="popup_image">
+                        <img src="../Pictures/aperture_wide-min.jpg">
+                    </a>
+                    This image shows a low f-stop number. Besides letting more or less light into 
+                    the camera, the f-stop number changes how much of the image is in focus at one time. 
+                </p>
+                <p>
+                    <a href="../Pictures/narrow_dof-min.jpg" title="Slim Depth of Field" class="popup_image">
+                        <img src="../Pictures/narrow_dof-min.jpg">
+                    </a>
+                    A smaller f-stop number only allows a very thin slice of the image to be sharp and 
+                    in focus. This effect is called having a <b>narrow depth of field</b>. Many photographers use this effect to draw a viewer's 
+                    attention to a particular area of the picture.
+                </p>
+                <p>
+                    <a href="../Pictures/long_dof-min.jpg" title="Long Depth of Field" class="popup_image">
+                        <img src="../Pictures/long_dof-min.jpg">
+                    </a>
+                    A larger f-stop allows more of the image to stay sharp and in focus. When there isn't 
+                    one particular subject in the image, it can be useful to have a <b>long depth of field</b>, such as a sweeping landscape view.
+                </p>
+            </div>
+            <div id="tabs-3">
+                <p>
+                    <a href="../Pictures/film_roll-min.jpg" title="Film" class="popup_image">
+                        <img src="../Pictures/film_roll-min.jpg">
+                    </a>
+                    To capture an image, a camera either uses <i>film</i> or a <i>digital sensor</i>, both 
+                    of which have a reaction on exposure to light. <b>ISO</b> is a number that indicates how quickly that reaction takes place. ISO
+                    is an internationally standard number, so any camera or film you ever use will have the same numbers that mean the same thing.
+                </p>
+                <p>
+                    <a href="../Pictures/high_iso-min.jpg" title="High ISO" class="popup_image">
+                        <img src="../Pictures/high_iso-min.jpg">
+                    </a>
+                    A high-ISO picture paired with a long shutter opening can even capture images of stars
+                    that might otherwise not be visible to the unaided eye.
+                </p>
+                <p>
+                    <a href="../Pictures/low_iso-min.jpg" title="Low ISO" class="popup_image">
+                        <img src="../Pictures/low_iso-min.jpg">
+                    </a>
+                    A lower ISO is typically all you need during the daytime, since the sun provide plenty of
+                    ambient light, even in the shade.
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="Exposure.js"></script>
+</body>
+<footer>
+    <p>&#169; 2021 Lenselink Photography</p>
+    <p class="citation">Images provided by <b>Pexels</b> from <a href="https://www.pexels.com/" target="blank"><b>www.pexels.com</b></a> are licensed by <b>CC 3.0 BY</b></p>
+</footer>
+</html>

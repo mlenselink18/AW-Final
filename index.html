@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>All About Photography</title>
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<header>
+    <h1>All About Taking Pictures</h1>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Exposure/index.html">Exposure</a></li>
+        <li><a href="Composition/index.html">Composition</a></li>
+        <li><a href="Zoom/index.html">Zoom</a></li>
+    </ul>
+</nav>
+<br>
+<body>
+    <main>
+        <section>
+            <h2>So you want to take better pictures?</h2>
+            <p>Are you ready to move up from your camera phone? How many sunsets did you see and wish you could properly capture it to share later?
+                With the help of this site, you will get all the basic skills you need to take your photography to the next level! We will go over all
+                essential mechanics that go into a great picture and get you out there making art in no time.
+                <br>
+            <br>
+            <h2>
+                What we offer
+            </h2>   
+            <div>        
+                <h3>
+                    How does a camera work?
+                </h3>
+                <p>
+                    <img src="Pictures/choose_a_camera-min.jpg" alt="So many cameras">
+                    There are so many cameras out there, and this site will teach you how they all capture images. All cameras use the same 
+                    basic mechanics to capture an image. Once you've learned on one, you will be able to take great pictures with any of them.
+                </p>
+            </div>
+            <br>
+            <div> 
+                <h3>
+                    What makes a picture look good?
+                </h3>
+                <p>   
+                    <img src="Pictures/girl_taking_picture-min.jpg" alt="A lens on a camera">             
+                    While art is always a subjective matter, an understanding of composition is a good place to start. This website will teach
+                    you the fundamentals of putting together a picture that is pleasing to look at, and will amaze your friends.
+                </p>
+            </div>
+            <br>
+            <div>
+                <h3>
+                    Does it zoom in?
+                </h3>
+                <p>  
+                    <img src="Pictures/camera_with_lens-min.jpg" alt="A lens on a camera">              
+                    Some camera lenses can zoom in to make distant objects look closer, while others capture a wide view but distort their 
+                    surroundings. The amound of zoom a lens has is based on its <i>focal length</i>, and this site will teach you how to choose 
+                    the right length for your pictures.
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</body>
+<footer>
+    <p>&#169; 2021 Lenselink Photography</p>
+    <p class="citation">Images provided by <b>Pexels</b> from <a href="https://www.pexels.com/" target="blank"><b>www.pexels.com</b></a> are licensed by <b>CC 3.0 BY</b></p>
+</footer>
+</html>

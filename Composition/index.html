@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Composition</title>
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<header>
+    <h1>Composing an Image</h1>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Exposure/index.html">Exposure</a></li>
+        <li><a href="../Composition/index.html">Composition</Command></a></li>
+        <li><a href="../Zoom/index.html">Zoom</a></li>
+    </ul>
+</nav>
+<br>
+<body>
+    <main>
+        <h2>
+            What is Composition?
+        </h2>
+        <p>
+            Just the same as how a songwriter must compose a song, a photographer must compose an image. There are many techniques 
+            to create an image that is pleasing to the eye, and some are very simple to learn; you may already be familiar
+            with some of them.
+        </p>
+        <p>
+            Take a look through to learn more about Balance, the Rule of Thirds, and Vanishing Points. Click on each image for a larger view.
+        </p>
+        <div id="tabs">
+            <ul>
+            <li><a href="#tabs-1">Vanishing</a></li>
+            <li><a href="#tabs-2">Balance</a></li>
+            <li><a href="#tabs-3">Rule of Thirds</a></li>
+            </ul>
+            <div id="tabs-1">
+                <p>
+                    <a href="../Pictures/Vanishing.jpg" title="Vanishing Point" class="popup_image">
+                        <img src="../Pictures/Vanishing.jpg">
+                    </a>
+                    A <b>vanishing point</b> is a concept in visual art that dates back to the Renaissance period. In photographry, 
+                    strong vanishing lines point the viewers eyes towards the subject or the center of the image. This sample picture 
+                    uses the edges of the road and the yellow center line to point your vision right to the middle of the frame, and then 
+                    to the mountains in the background.
+                </p>
+            </div>
+            <div id="tabs-2">
+                <p>
+                    <a href="../Pictures/Vanishing-balance.JPG" title="Balance" class="popup_image">
+                        <img src="../Pictures/Vanishing-balance.JPG">
+                    </a>
+                    <b>Balance</b> in the context of a picture means that there is an equal amount to look at on both sides. Symmetry is 
+                    a good way to start balancing your pictures. In this picture, the center line of the road follows right along the middle 
+                    of the image, and the horizon is right at the middle on the vertical axis.
+                </p>
+            </div>
+            <div id="tabs-3">
+            <p>
+                <a href="../Pictures/Vanishing-thirds.JPG" title="The Rule of Thirds" class="popup_image">
+                    <img src="../Pictures/Vanishing-thirds.JPG">
+                </a>
+                A slightly more advanced method to compose your pictures is by using the <b>rule of thirds</b>. If you imagine a tic-tac-toe 
+                grid on a picture, aligning important visual elements within the boxes creates a natural ensemble that is generally pleasing 
+                to look at. Notice how the bottom third of this picture is filled by the road, while the top third is filled entirely by sky.
+            </p>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="Composition.js"></script>
+</body>
+<footer>
+    <p>&#169; 2021 Lenselink Photography</p>
+    <p class="citation">Images provided by <b>Pexels</b> from <a href="https://www.pexels.com/" target="blank"><b>www.pexels.com</b></a> are licensed by <b>CC 3.0 BY</b></p>
+</footer>
+</html>

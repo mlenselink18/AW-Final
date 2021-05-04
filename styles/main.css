@@ -1,0 +1,353 @@
+/* 
+colors:
+white 
+black
+light green #3cc47c
+forest green #1e392a
+light tan #e9c893
+tin #828081
+*/
+
+*
+{
+    margin: 10;
+    padding: 10;
+    font: sans-serif;
+}
+
+#mobile_menu
+{
+    display: none;
+    padding: 3px;
+    background-color: #1e392a;
+}
+
+.slicknav_menu
+{
+    background-color: #1e392a;
+}
+
+.slicknav_btn
+{
+    background-color: #1e392a;
+}
+
+header
+{
+    padding-left: 3.3333%;
+    padding-right: 3.3333%;
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 0.3125em solid #828081;
+    background-image: linear-gradient(white,#828081);
+    /* background-image: linear-gradient(white, #3cc47c); */
+    color: black;
+}
+
+body
+{
+    align-content: center;
+    width: 99%;
+    border: 0.3125em;
+    border-color: black;
+    border-style: solid;
+    background-color: #707070;
+    margin: auto;
+    font-family: sans-serif;    
+}
+
+main
+{
+    margin-left: 3.3333%;
+    padding-left: 3.3333%;
+    margin-right: 3.3333%;
+    padding-right: 3.3333%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;    
+}
+
+footer
+{
+    padding-left: 3.3333%;
+    padding-right: 3.3333%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #1e392a;   
+    text-align: center;
+    clear: both;
+}
+
+footer p
+{
+    color: white;
+}
+
+footer a
+{
+    color: #e9c893;
+}
+
+img
+{
+    max-width: 800;
+}
+
+section img
+{
+    margin-right: 1em;
+    margin-bottom: 1em;
+    float: left;
+    max-width: 200px;
+    min-width: 70px;
+}
+
+section div
+{
+    display: block;
+}
+
+section div:after 
+{
+    content:"";
+    clear:both;
+    display:block;
+}
+
+section
+{
+    flex-basis: 80%;
+    order: 2;
+}
+
+aside
+{
+    padding-left: 3.3333%;
+    margin-right: 3.3333%;
+    padding-right: 3.3333%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    width: 27.2222%;
+    order: 1;
+    flex-basis: 20%;
+}
+
+main p
+{
+    float: left;
+}
+
+main p img
+{
+    margin-right: 1em;
+    margin-bottom: 1em;
+    float: left;
+    max-width: 200px;
+    min-width: 70px;
+}
+
+
+@media only screen and (max-width: 900px)
+{
+    *
+    {
+        font-size: 90%;
+    }
+    body
+    {
+        box-shadow: none;
+        width: 98%;
+    }
+    #mobile_menu
+    {
+        display: none;
+    }
+    header
+    {
+        padding-bottom:2em;
+    }
+    header h1
+    {
+        font-size: 200%;
+    }
+    header h3
+    {
+        font-size: 150%;
+    }
+
+    main p img
+{
+    margin-right: 1em;
+    margin-bottom: 1em;
+    float: left;
+    max-width: 140px;
+    min-width: 70px;
+}
+}
+
+@media only screen and (max-width: 767px)
+{
+    body
+    {
+        width: 98%;
+    }
+
+    #nav_menu
+    {
+        display: none;
+    }
+
+    #mobile_menu
+    {
+        display: block;
+    }
+
+    main
+    {
+        order: 3;
+        border: 0;
+        margin-top: 0;
+        width: 80%;
+        flex-direction: column;
+    }
+
+    section
+    {
+        order: 1;
+    }
+    
+    aside
+    {
+        border: 0;
+        margin-top: 0;
+        order: 2;
+    }
+    header
+    {
+        font-size: inherit;
+        padding-bottom:initial;
+    }
+
+    footer
+    {
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 479px)
+{
+    body
+    {
+        font-size: initial;
+    }
+    header
+    {
+        font-size: 70%;
+        padding-bottom: 3em;
+    }
+    header h1
+    {
+        font-size: 300%;
+    }
+    header h3
+    {
+        font-size: 200%;
+    }
+    h2
+    {
+        font-size: 120%;
+    }
+    p
+    {
+        font-size: 120%;
+    }
+
+    main p
+    {
+        float: right;
+    }
+
+    main p img
+    {
+        margin-right: 1em;
+        margin-bottom: 1em;
+        float: left;
+        max-width: 100px;
+        min-width: 70px;
+    }
+    
+    dialog
+    {
+        max-width: 400px;    }
+}
+
+h1
+{
+    font: sans_serif;
+    color: black;
+}
+
+header h2
+{
+    color: black;
+    font-style: italic;
+}
+
+#nav_menu
+{
+    margin-bottom: 0;
+}
+
+#nav_menu ul
+{
+    list-style-type: none;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+    border-top: none;
+}
+
+#nav_menu li
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#nav_menu ul li
+{
+    float: left;
+    width: 25%;
+}
+
+#nav_menu ul li a
+{
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #1e392a;
+    color: white;
+}
+
+#nav_menu ul li a:hover
+{
+    color: #828081;
+    background-color: #1e392a;
+}
+
+#mobile_menu ul li a:hover
+{
+    background-color: #1e392a;
+}
+
+#mobile_menu ul ul li a:hover
+{
+    background-color: #1e392a;
+}
